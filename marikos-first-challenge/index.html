@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" href="icon.png">
+  <title>⚪︎⚪︎のおてつだい記録 🌟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+  
+      <h1>⚪︎⚪︎のおてつだい記録</h1>
+    
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="today">きょう</button>
+      <button class="tab" data-tab="month">こんげつ</button>
+    </nav>
+
+    <main>
+      <section id="today" class="panel active">
+        <div class="date-card">
+          <p class="date-label">きょうの日付</p>
+          <p class="date-value" id="today-date"></p>
+        </div>
+
+        <ul class="chore-list" id="chore-list"></ul>
+
+        <div class="today-total">
+          <span>きょうのお小遣い</span>
+          <strong id="today-total">0円</strong>
+        </div>
+      </section>
+
+      <section id="month" class="panel">
+        <div class="month-summary">
+          <p class="month-label" id="month-label"></p>
+          <p class="month-amount" id="month-amount">0円</p>
+          <p class="month-days" id="month-days">お手伝い 0日</p>
+        </div>
+
+        <div class="calendar" id="calendar"></div>
+
+        <button class="settle-btn" id="settle-btn">今月を清算する 💰</button>
+        <p class="settle-note" id="settle-note"></p>
+
+        <div class="history-container" id="history"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
